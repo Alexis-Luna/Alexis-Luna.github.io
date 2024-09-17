@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlace de Datos</title>
+</head>
+<body>
+    <header>
+        <h1><center>Capa de Enlace de Datos</center></h1>
+        <hr>
+    </header>
+    
+    <aside>
+        <nav>
+            <a href="index.html">Modelo OSI</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec1.html">Capa Fisica</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec2.html">Capa de Enlace de Datos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec3.html">Capa de Red</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec4.html">Capa de Transporte</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec5.html">Capa de Sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="formulario.html">Formulario</a>
+            <hr>
+        </nav>
+    </aside>
+
+    <section>
+        <article>
+            <h2>Funciones</h2>
+
+            <ul><b>Encapsulación de datos</b>
+            <li>ramas (frames): La capa de enlace de datos organiza los datos en unidades llamadas tramas, que incluyen la 
+                información de control necesaria, como las direcciones MAC de origen y destino.</li></ul>
+
+            <ul><b>Control de acceso al medio (MAC)</b>
+            <li>Gestiona el acceso al medio físico compartido para evitar colisiones. Se asegura de que los nodos sepan 
+                cuándo pueden transmitir para evitar que múltiples dispositivos transmitan simultáneamente.</li></ul>
+
+            <ul><b>Detección y corrección de errores</b>
+            <li>La capa de enlace de datos detecta errores en las tramas mediante sumas de verificación, como CRC 
+                (Cyclic Redundancy Check), y puede solicitar retransmisiones si los datos llegan corruptos.</li></ul>
+
+            <ul><b>Control de flujo</b>
+            <li>Regula la velocidad de envío de datos para evitar que un nodo rápido sobrecargue a un nodo más lento. 
+                Esto ayuda a evitar la pérdida de tramas o la saturación del receptor.</li></ul>
+
+            <ul><b>Direccionamiento físico</b>
+            <li>Utiliza las direcciones MAC para identificar de manera única los dispositivos en una red local, 
+                asegurándose de que los datos lleguen al nodo correcto.</li></ul>
+
+            <ul><b>Segmentación de tramas</b>
+            <li>Si los datos son demasiado grandes para transmitirse de una vez, la capa de enlace de datos los fragmenta 
+                en tramas más pequeñas que luego se ensamblan en el destino.</li></ul>
+
+            <ul><b>Sincronización de tramas</b>
+            <li>Garantiza que tanto el transmisor como el receptor estén sincronizados para interpretar correctamente el inicio y 
+                el fin de una trama.</li></ul>
+
+            <ul><b>Control de topología</b>
+            <li>Mantiene información sobre la disposición física de los nodos en la red para que los datos puedan transmitirse de 
+                manera eficiente.</li></ul>
+        </article>
+
+        <article>
+            <h2>Dispositivos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Funciones</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Switch</td>
+                        <td>Un switch (o conmutador) es uno de los dispositivos más comunes en la capa de enlace de datos. 
+                            Se encarga de recibir tramas de datos en sus puertos y, basándose en las direcciones MAC de origen y 
+                            destino, las reenvía solo al puerto correspondiente, en lugar de enviar los datos a todos los puertos.</td>
+                            <td><figure>
+                                <img src="../multimedia/imagenes/switch.jpg" width="200">
+                            </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Bridge</td>
+                        <td>Un bridge es un dispositivo que conecta dos o más segmentos de red y filtra el tráfico entre ellos, 
+                            tomando decisiones basadas en las direcciones MAC. Un bridge es útil para reducir colisiones y 
+                            dividir grandes redes en segmentos más pequeños.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/bridge.jpg" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td><abbr title="Network Interface Card"><i>NIC</i></abbr></td>
+                        <td>La tarjeta de red (NIC) conecta físicamente un dispositivo (como una computadora) a la red y 
+                            permite la comunicación a través de esta. La NIC también contiene la dirección MAC única de cada 
+                            dispositivo.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/nic.png" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Access Point</td>
+                        <td>Un punto de acceso inalámbrico trabaja en la capa de enlace de datos cuando maneja el tráfico de la 
+                            red local entre dispositivos y su dirección MAC. Permite la conexión de dispositivos inalámbricos 
+                            a una red cableada.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/access.jpeg" width="200">
+                        </figure></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <hr>
+    </section>
+    
+    <footer>
+        <small><b>Alexis Estudiante</b></small>
+    </footer>
+</body>
+</html>

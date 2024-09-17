@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte</title>
+</head>
+<body>
+    <header>
+        <h1><center>Capa de Transporte</center></h1>
+        <hr>
+    </header>
+    
+    <aside>
+        <nav>
+            <a href="index.html">Modelo OSI</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec1.html">Capa Fisica</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec2.html">Capa de Enlace de Datos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec3.html">Capa de Red</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec4.html">Capa de Transporte</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec5.html">Capa de Sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="formulario.html">Formulario</a>
+            <hr>
+        </nav>
+    </aside>
+
+    <section>
+        <article>
+            <h2>Funcion</h2>
+
+            <ul><b>Segmentación y Reensamblaje</b>
+            <li>Los datos de las capas superiores se dividen en segmentos en esta capa. Si los datos son grandes, la 
+                capa de transporte los fragmenta en segmentos más pequeños que luego se transmiten. En el destino, la 
+                capa de transporte reensambla estos segmentos en el orden correcto para entregar el mensaje original.</li></ul>
+
+            <ul><b>Control de Flujo</b>
+            <li>Gestiona la cantidad de datos que se envían para evitar que un dispositivo rápido sobrecargue a uno 
+                más lento. Esto garantiza que los datos lleguen sin pérdidas y sin saturar al receptor.</li></ul>
+
+            <ul><b>Control de Errores</b>
+            <li>La capa de transporte incluye mecanismos para detectar y corregir errores durante la transmisión de los 
+                segmentos. Si un segmento se pierde o llega corrupto, puede solicitar la retransmisión de los datos. Los 
+                protocolos como TCP tienen controles de errores integrados.</li></ul>
+
+            <ul><b>Establecimiento, Gestión y Terminación de Conexiones</b>
+            <li>Esta capa es responsable de establecer y finalizar conexiones entre los dispositivos que se comunican. 
+                En el caso de TCP, utiliza el "handshake" de tres vías para iniciar una conexión y asegurar que ambas 
+                partes están listas para comunicarse.</li>
+            <li>También asegura que la conexión se cierre correctamente cuando la comunicación ha terminado.</li></ul>
+
+            <ul><b>Multiplexación y Demultiplexación</b>
+            <li>La capa de transporte permite que múltiples aplicaciones o procesos en un mismo dispositivo envíen y reciban 
+                datos simultáneamente. Para lograr esto, utiliza puertos para identificar qué aplicación envía o recibe los 
+                datos, lo que se denomina multiplexación en el emisor y demultiplexación en el receptor.</li></ul>
+
+            <ul><b>Control de Congestión</b>
+            <li>En redes congestionadas, la capa de transporte puede reducir la velocidad de transmisión para evitar 
+                la pérdida de datos y reducir la sobrecarga de la red. TCP, por ejemplo, ajusta dinámicamente la cantidad 
+                de datos que se transmiten en función de la congestión detectada en la red.</li></ul>
+
+            <ul><b>Transporte Confiable e No Confiable</b>
+            <li><abbr title="Transmission Control Protocol"><i>TCP:</i></abbr> Garantiza que los datos lleguen completos y en el orden correcto, 
+                gestionando retransmisiones y secuenciación.</li>
+            <li><abbr title="User Datagram Protocol"><i>UDP:</i></abbr> No ofrece garantía de entrega ni de orden. Se utiliza 
+                en aplicaciones donde la velocidad es más importante que la fiabilidad, como en video en tiempo real o juegos 
+                en línea.</li></ul>
+
+            <ul><b>Secuenciación de Datos</b>
+            <li>En protocolos como TCP, esta capa numera los segmentos de datos para garantizar que, incluso si los segmentos 
+                llegan fuera de orden, puedan reordenarse correctamente antes de entregarlos a la aplicación.</li></ul>
+
+            <ul><b>Identificación de Servicios (Puertos)</b>
+            <li>La capa de transporte utiliza números de puerto para diferenciar entre diferentes servicios o aplicaciones 
+                dentro de un mismo dispositivo. Por ejemplo, el puerto 80 es para HTTP y el puerto 443 para HTTPS.</li></ul>
+        </article>
+
+        <article>
+            <h2>Dispositivos</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Funcion</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Firewall</td>
+                        <td>Aunque principalmente operan en la capa de aplicación, algunos firewalls avanzados 
+                            inspeccionan y gestionan el tráfico a nivel de la capa de transporte, como el control de 
+                            puertos y la protección contra ataques que explotan vulnerabilidades de protocolos de transporte.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/firewall.jpeg" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Gateway</td>
+                        <td>Los gateways que operan a nivel de transporte pueden traducir protocolos o adaptar el tráfico 
+                            entre diferentes aplicaciones o redes, proporcionando funcionalidades similares a los proxies 
+                            y facilitando la interoperabilidad.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/gateway4.jpeg" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Proxy de Red</td>
+                        <td>Los proxies de red, que operan en la capa de transporte y a veces en capas superiores, pueden gestionar y 
+                            filtrar el tráfico de red en función de puertos, protocolos y otros parámetros de la capa de transporte.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/proxy.png" width="200">
+                        </figure></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </article>
+    </section>
+    <footer>
+        <small><b>Alexis Estudiante</b></small>
+    </footer>
+</body>
+</html>

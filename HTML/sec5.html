@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión</title>
+</head>
+<body>
+    <header>
+        <h1><center>Capa de Sesión</center></h1>
+        <hr>
+    </header>
+
+    <aside>
+        <nav>
+            <a href="index.html">Modelo OSI</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec1.html">Capa Fisica</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec2.html">Capa de Enlace de Datos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec3.html">Capa de Red</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec4.html">Capa de Transporte</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec5.html">Capa de Sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="formulario.html">Formulario</a>
+            <hr>
+        </nav>
+    </aside>
+
+    <section>
+        <article>
+            <h2>Funcion</h2>
+
+            <ul><b>Establecimiento y Gestión de Sesiones</b>
+                <li>La capa de sesión establece, mantiene y termina sesiones de comunicación entre aplicaciones. 
+                    Asegura que los procesos de comunicación se inicien y finalicen de manera ordenada y que las 
+                    sesiones se mantengan durante el intercambio de datos.</li></ul>
+
+            <ul><b>Sincronización</b>
+            <li>Sincroniza el intercambio de datos entre aplicaciones para asegurar que los datos se envíen y 
+                reciban en el orden correcto. También puede insertar puntos de sincronización en una sesión para que, 
+                en caso de error, los datos puedan reiniciarse desde el último punto de sincronización.</li></ul>
+
+            <ul><b>Control de Diálogo</b>
+            <li>Controla el diálogo entre aplicaciones, permitiendo la comunicación en modo full-duplex 
+                (bidireccional simultáneamente) o half-duplex (bidireccional alternando). Esto asegura que las 
+                aplicaciones pueden coordinar cómo y cuándo envían y reciben datos.</li></ul>
+
+            <ul><b>Gestión de Sesiones Multiplexadas</b>
+            <li>Permite que múltiples sesiones de comunicación se gestionen simultáneamente a través de una única 
+                conexión de red, usando identificadores de sesión para distinguir entre diferentes comunicaciones.</li></ul>
+
+            <ul><b>Control de Conexión</b>
+            <li>Supervisa y controla las conexiones entre aplicaciones para asegurar que se mantengan activas durante 
+                el tiempo necesario y que se cierren correctamente al final de la comunicación.</li></ul>
+                
+            <ul><b>Reinicio de Sesión</b>
+            <li>En caso de interrupciones o fallos, la capa de sesión puede reiniciar o reanudar sesiones interrumpidas desde el 
+                último punto de sincronización o estado conocido.</li></ul>
+        </article>
+        
+        <article>
+            <h2>Dispositivos</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Funcion</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Servidores de Aplicaciones</td>
+                        <td>Los servidores de aplicaciones gestionan las sesiones entre los clientes (usuarios) y el 
+                            servidor, manteniendo la conexión durante la interacción del usuario con la aplicación. 
+                            Estos servidores pueden manejar múltiples sesiones simultáneas para diferentes usuarios.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/servidorap.png" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Sistemas de Autenticación</td>
+                        <td>Sistemas como servidores de autenticación pueden ser vistos como dispositivos o 
+                            servicios que trabajan en la capa de sesión, ya que gestionan el establecimiento 
+                            de sesiones seguras y autenticadas entre usuarios y sistemas. También pueden controlar 
+                            el tiempo de duración de las sesiones según políticas de seguridad.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/verificacion.png" width="200">
+                        </figure></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </article>
+    </section>
+    <footer>
+        <small><b>Alexis Estudiante</b></small>
+    </footer>
+</body>
+</html>

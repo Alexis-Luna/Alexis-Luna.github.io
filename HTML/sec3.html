@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red</title>
+</head>
+<body>
+    <header>
+        <h1><center>Capa de Red</center></h1>
+        <hr>
+    </header>
+    
+    <aside>
+        <nav>
+            <a href="index.html">Modelo OSI</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec1.html">Capa Fisica</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec2.html">Capa de Enlace de Datos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec3.html">Capa de Red</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec4.html">Capa de Transporte</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sec5.html">Capa de Sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="formulario.html">Formulario</a>
+            <hr>
+        </nav>
+    </aside>
+
+    <section>
+        <article>
+            <h2>Funcion</h2>
+            <ul><b>Direccionamiento lógico</b>
+                <li>La capa de red utiliza direcciones lógicas, como las direcciones IP, para identificar de manera única los 
+                    dispositivos en una red. Esto es necesario para poder enrutar los datos a través de redes diferentes.</li></ul>
+
+            <ul><b>Encaminamiento (ruteo)</b>
+                <li>Esta capa se encarga de determinar la mejor ruta que deben seguir los paquetes de datos desde su 
+                    origen hasta su destino, especialmente cuando deben pasar por varias redes intermedias. 
+                    Los routers son los dispositivos encargados de esta función.</li></ul>
+
+            <ul><b>Fragmentación y reensamblado</b>
+                <li>Si un paquete es demasiado grande para enviarse a través de una red, la capa de red lo fragmenta en 
+                    pedazos más pequeños para que puedan transmitirse. En el destino, estos fragmentos se reensamblan 
+                    para recrear el paquete original.</li></ul>
+
+            <ul><b>Control de congestión</b>
+                <li>La capa de red implementa mecanismos para evitar la congestión en la red. Si detecta que una ruta 
+                    está saturada o sobrecargada, puede elegir una ruta alternativa o informar a las capas superiores 
+                    para ajustar la velocidad de transmisión de los datos.</li></ul>
+
+            <ul><b>Conmutación de paquetes</b>
+                <li>En lugar de enviar los datos en un solo bloque, la capa de red divide los datos en paquetes, que se envían de 
+                    forma independiente a través de la red. Cada paquete puede tomar diferentes rutas, y la capa de red asegura que 
+                    todos los paquetes lleguen al destino final, donde se reensamblan.</li></ul>
+
+            <ul><b>Interconexión de redes</b>
+                <li>La capa de red permite la comunicación entre diferentes redes, lo que es fundamental para el funcionamiento 
+                    de internet. Esta capa facilita la conexión de redes de distintas tecnologías, resolviendo las 
+                    diferencias en los protocolos utilizados en cada red.</li></ul>
+
+            <ul><b>Manejo de errores</b>
+                <li>La capa de red también puede realizar ciertas funciones de manejo de errores, como la detección de 
+                    paquetes corruptos o perdidos. Aunque no es su principal responsabilidad, puede descartar paquetes 
+                    con errores y notificar a la capa superior para que se tomen medidas correctivas.</li></ul>
+
+            <ul><b>Control de calidad de servicio (QoS)</b>
+                <li>Esta función permite que la capa de red administre los recursos de la red para garantizar un rendimiento 
+                    adecuado para ciertas aplicaciones, como video en tiempo real o voz, que requieren una baja latencia y 
+                    un ancho de banda consistente.</li></ul>
+        </article>
+
+        <article>
+            <h2>Dispositivos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Funcion</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Router (Enrutador)</td>
+                        <td>Un router es el dispositivo más importante en la capa de red. Se encarga de 
+                            dirigir los paquetes de datos entre diferentes redes mediante la lectura de 
+                            direcciones IP y el uso de algoritmos de enrutamiento para determinar la mejor ruta.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/router.jpeg" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Switch</td>
+                        <td>Un switch de capa 3 combina las funciones de un switch (de capa 2) y un router. No 
+                            solo maneja la conmutación de tramas en una red local usando direcciones MAC, sino que 
+                            también puede hacer enrutamiento a nivel de IP entre diferentes subredes.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/switch2.jpg" width="200">
+                        </figure></td>
+                    </tr>
+                    <tr>
+                        <td>Gateway</td>
+                        <td>Un gateway es un dispositivo que conecta y permite la comunicación entre dos redes que 
+                            utilizan diferentes protocolos de comunicación. A nivel de la capa de red, actúa como 
+                            un punto de traducción entre redes con diferentes arquitecturas o protocolos.</td>
+                        <td><figure>
+                            <img src="../multimedia/imagenes/gateway.jpeg" width="200">
+                        </figure></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </article>
+    </section>
+    <footer>
+        <small><b>Alexis Estudiante</b></small>
+    </footer>
+</body>
+</html>
